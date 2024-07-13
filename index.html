@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/en.js"></script>
+        <script>dayjs.locale('en')</script>
+
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+
+        <form onsubmit="saveActivity(event)">
+            <div>
+                <input 
+                    type="text" 
+                    placeholder="What's the activity?" 
+                    name="activity" 
+                    required
+                >
+            </div>
+            
+            <div>
+                <select name="day">
+                    <option value="2024-03-01">February 1st</option>
+                </select>
+            </div>
+            
+            <div>
+                <select name="time">
+                    <option value="10:30">10:30</option>
+                </select>
+            </div>
+
+            <button>Save activity</button>
+        </form>
+
+        <main>
+            <h1> Activities </h1>
+
+            <section></section>
+
+        </main>
+        
+
+        <script src="script.js"></script>
+    </body>
+</html>
+
+
+
+
+
